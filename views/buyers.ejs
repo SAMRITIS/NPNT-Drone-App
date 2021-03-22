@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    
+    <!-- Bootstrap Files and Meta Data -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    
+    <!-- Adding Google Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400&display=swap" rel="stylesheet">
+  
+
+    <!-- Adding External Css File  -->
+    <link rel="stylesheet" type="text/css" href="login.css">
+    <link rel="icon" href="pqr.png" type="image/png" >
+    <title>NPNT Management Server</title>
+  </head>
+  <body>
+    <div class='main container'>
+      <div class='child'>
+      <img src="pqr.png"><br/><br/>
+      <h1>Buyer's Login</h1><br/>
+      <p style="color: red;"><%= message %></p>
+      <form method="POST" action="/buyers">
+        <label for="fname">Buyer's Email</label>
+        <input type="email" name="email" placeholder="Enter Buyer's Registered Email Here" required/>
+    
+        <label for="lname">Buyer's Password</label>
+        <input type="password"  name="password" placeholder="Enter Buyer's Password Password Here" required/>
+        <br/>
+        <input type="submit" value="Sign In">
+      </form>
+    
+     
+      
+      </div>
+    </div>
+    
+    <!-- Bootstrap Javascript Files  -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+  </body>
+
+</html>

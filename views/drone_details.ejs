@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    
+    <!-- Bootstrap Files and Meta Data -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    
+    <!-- Adding Google Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400&display=swap" rel="stylesheet">
+  
+
+    <!-- Adding External Css File  -->
+    <link rel="stylesheet" type="text/css" href="pilot.css">
+    <link rel="icon" href="pqr.png" type="image/png" >
+    <title>NPNT Management Server</title>
+  </head>
+  <body>
+    <div class='main container'>
+      <div class='child'>
+      <img src="pqr.png"><br/><br/>
+      <h1>Drone Details</h1><br/>
+      <p style="color: red;"><%= message %></p>
+      <form action="/drone_details" method="POST">
+        <label for="fname">Vehicle ID</label>
+        <input type="text"  placeholder="Enter Your Vehicle ID Here" name="vehicle_id" required>
+    
+        <label for="lname">Vehicle Number</label>
+        <input type="text"  placeholder="Enter Vehicle Number Here" name="vehicle_no" required>
+
+        <label for="lname">Firmware Version</label>
+        <input type="text"  placeholder="Enter Firmware Version Here" name="firmware_version" required>
+
+        <label for="lname">Drone Name</label>
+        <input type="text"  placeholder="Enter Drone Name Here" name="drone_name" required>
+        <br/>
+        <input type="submit" value="Submit">
+      </form>
+      </div>
+    </div>
+    
+    <!-- Bootstrap Javascript Files  -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+  </body>
+
+</html>

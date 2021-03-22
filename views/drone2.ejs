@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        
+        <!-- Bootstrap Files and Meta Data -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+        
+        <!-- Adding Google Fonts -->
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400&display=swap" rel="stylesheet">
+      
+    
+        <!-- Adding External Css File  -->
+        <link rel="stylesheet" type="text/css" href="drone1.css">
+        <link rel="icon" href="pqr.png" type="image/png" >
+        <title>NPNT Management Server</title>
+      </head>
+<body>
+    <div>
+        <div class="main">
+            
+            <img src="pqr.png" ><br/><br/>
+            <h1 style="text-align: center;">Add Customer Company </h1><br>
+            <p style="color: red;"><%= message %></p>
+              <form method="POST" action="/com" enctype="multipart/form-data">
+               
+                <div class="child3" >
+                  <div class="row">
+                    <h4 style="margin-left: 100px!important;">Add Customer Company</h4><br/>
+                    <div class="col-sm-6 col-md-5 col-lg-6">
+                      <div class="child1">
+
+                      
+                  <label for="fname">Company Name</label>
+                  <input type="text" name="company_name" placeholder="Enter Company Name Here" >
+                  <br>
+                  <label for="fname">Company CIN</label>
+                  <input type="text" name="cin" placeholder="Enter Company CIN" >
+                  <br>
+                  <label for="fname">DGCA ID</label>
+                  <input type="text" name="dgca_company_id" placeholder="Enter DGCA ID Here" >
+                        </div>
+                      </div>
+
+
+
+
+                      <div class="col-sm-6 col-md-5 col-lg-6 ">
+                        <div class="child2" >
+                          
+                          <label for="fname">Address of Company</label>
+                          <input type="text" name="address" placeholder="Enter Address of Company Here" > 
+                          <br>
+                          <label for="fname">Website</label>
+                          <input type="text" name="website" placeholder="Enter Website" >
+                          <br>
+                          <label for="fname">Company GST Number</label>
+                          <input type="text" name="gst" placeholder="Enter Company of GST Number" >
+                          <br>
+                          <label for="fname">Upload Company Logo</label>
+                          <div class="custom-file">
+                           <input type="file" name="file" class="custom-file-input" id="validatedCustomFile" required>
+                           <label class="custom-file-label" for="validatedCustomFile"></label>
+                           <div class="invalid-feedback">Example invalid custom file feedback</div>
+                         </div>
+                         </div>
+                          
+                        </div>
+                    </div>
+                  
+                  <br><br/>
+                <div class="row">
+                  <div class="col-sm-6 col-md-5 col-lg-6">
+                    <div class="child1">
+                    <h4>Primary Contact</h4>
+                    <label for="fname">First Name</label>
+                    <input type="text" name="p_first_name" placeholder="Enter First Name Here">
+                    <br>
+                    <label for="fname">Last Name</label>
+                    <input type="text" name="p_last_name" placeholder="Enter Last Name">
+                    <br>
+                    <label for="fname">Password</label>
+                    <input type="text" name="p_password" placeholder="Enter Password Here">
+                    <br>
+                    <label for="fname">Email</label>
+                    <input type="text" name="p_email" placeholder="Enter Email Here">
+                    <br>
+                    <label for="fname">Phone Number</label>
+                    <input type="text" name="p_phone" placeholder="Enter Phone Number">
+                    <br>
+                   
+                  
+                    </div>
+                  </div>
+
+                    <div class="col-sm-6 col-md-5 col-lg-6 ">
+                    <div class="child2" >
+                    <h4>Secondary Contact</h4>
+                    <label for="fname">First Name</label>
+                    <input type="text" name="s_first_name" placeholder="Enter First Name Here">
+                    <br>
+                    <label for="fname">Last Name</label>
+                    <input type="text" name="s_last_name" placeholder="Enter Last Name">
+                    <br>
+                    <label for="fname">Password</label>
+                    <input type="text" name="s_password" placeholder="Enter Password Here">
+                    <br>
+                    <label for="fname">Email</label>
+                    <input type="text" name="s_email" placeholder="Enter Email Here">
+                    <br>
+                    <label for="fname">Phone Number</label>
+                    <input type="text" name="s_phone" placeholder="Enter Phone Number">
+                    
+                   
+                    </div>
+                   </div>
+                   <br>
+                  <input type="submit" value="submit">
+                </form>
+                   
+                   </div>
+                 
+              
+
+          
+
+ 
+      
+    </form>
+</body>
+</html>

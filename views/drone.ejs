@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    
+    <!-- Bootstrap Files and Meta Data -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    
+    <!-- Adding Google Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400&display=swap" rel="stylesheet">
+  
+
+    <!-- Adding External Css File  -->
+    <link rel="stylesheet" type="text/css" href="drone.css">
+    <link rel="icon" href="pqr.png" type="image/png" >
+    <title>NPNT Management Server</title>
+  </head>
+  <body>
+    
+    <div class="d">
+      <img src="pqr.png"><br/><br/>
+      <h1>Add Drone</h1><br>
+      <form>
+        <div class="child1">
+        <label for="fname">Drone Id</label>
+        <input type="text" id="fname" placeholder="Enter Drone Id Here">
+
+        <label for="fname">Manufacturing Batch</label>
+        <input type="text" id="fname" placeholder="Enter Manufacturing Batch">
+        
+        <label for="fname">Manufacturing Shift</label>
+        <input type="text" id="fname" placeholder="Enter Manufacturing Shift">
+
+        <label for="fname">Serial Number</label>
+        <input type="text" id="fname" placeholder="Enter Serial Number">
+  
+        <label for="fname">Manufacturing Date</label>
+        <input type="text" id="fname" placeholder="Enter Manufacturing Date">
+        
+        <label for="exampleFormControlSelect1">Select Model</label>
+          <select>
+            <option class="c">AMX Quad</option>
+          </select>
+        </div>  
+        <br><br>   
+        <div class="row">
+          <div class="col-sm-6 col-md-5 col-lg-6">
+        <div class="child1">
+        <h4>Flight Controller Hardware Details</h4>
+        <label for="fname">Make</label>
+        <input type="text" id="fname" placeholder="Enter Make">
+
+        <label for="fname">Version</label>
+        <input type="text" id="fname" placeholder="Enter Version">
+
+        <label for="fname">Serial Number</label>
+        <input type="text" id="fname" placeholder="Enter Serial Number">
+        <br><br>
+        </div>
+        </div>
+        <div class="col-sm-6 col-md-5 col-lg-6 ">
+        <div class="child2">
+        <h4>Flight Controller Software Details</h4>
+        <label for="fname">Make</label>
+        <input type="text" id="fname" placeholder="Enter Make">
+
+        <label for="fname">Model</label>
+        <input type="text" id="fname" placeholder="Enter Model">
+
+        <label for="fname">Serial Number</label>
+        <input type="text" id="fname" placeholder="Enter Serial Number">
+        <br>
+        
+        </div>
+       
+        </div>
+        <input type="submit" value="Submit">
+      </form><br/>
+    </div>
+    <!-- Bootstrap Javascript Files  -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+  </body>
+</html>

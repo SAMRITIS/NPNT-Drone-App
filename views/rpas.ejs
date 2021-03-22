@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        
+        <!-- Bootstrap Files and Meta Data -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+        
+        <!-- Adding Google Fonts -->
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400&display=swap" rel="stylesheet">
+      
+    
+        <!-- Adding External Css File  -->
+        <link rel="stylesheet" type="text/css" href="drone1.css">
+        <link rel="icon" href="pqr.png" type="image/png" >
+        <title>NPNT Management Server</title>
+      </head>
+<body>
+    <div>
+        <div class="main">
+            
+            <img src="pqr.png" ><br/><br/>
+            <h1 style="text-align: center;">Add New RPAS</h1><br>
+            
+              <form action="/rpas" method="POST" enctype="multipart/form-data">
+               
+                <div class="child3">
+                  <div class="row">
+                    <div class="col-sm-6 col-md-5 col-lg-6">
+                      <div class="child1">
+
+                      
+                  <label for="fname">Model Name</label>
+                  <input type="text" name="model_name" placeholder="Enter Model Name Here" >
+                  <br>
+                  <label for="fname">Model Number </label>
+                  <input type="text" name="model_number" placeholder="Enter Model Number " >
+                  <br>
+                  <label for="fname">Purpose of Operation</label>
+                  <input type="text" name="purpose" placeholder="Enter Purpose of Operation Here" >
+
+                  <label for="fname">Fuel Capacity</label>
+                  <input type="text" name="fuel_capacity" placeholder="Enter Fuel Capacity Here" >
+
+                  <label for="fname">Maximum Endurance </label>
+                  <input type="text" name="max_endurance" placeholder="Enter Maximum Endurance Here" >
+
+                  <label for="fname">Maximum Range</label>
+                  <input type="text" name="max_range" placeholder="Enter Maximum Range Here" >
+
+                  <label for="fname">Maximum Speed</label>
+                  <input type="text" name="max_speed" placeholder="Enter Maximum Speed Here" >
+
+                  <label for="fname">Engine Count</label>
+                  <input type="text" name="engine_count" placeholder="Enter Engine Count Here" >
+
+
+                  <label for="exampleFormControlSelect1">Select Wing Type</label>
+                  <select name="wing_type">
+                    <option class="c">Fixed</option>
+                  </select>
+
+                  <label for="exampleFormControlSelect1">Drone Category Type</label>
+                  <select name="drone_type">
+                  <option class="c">Nano</option>
+                  </select>
+                        </div>
+                      </div>
+
+
+
+
+                      <div class="col-sm-6 col-md-5 col-lg-6 ">
+                        <div class="child2" >
+                          
+                          <label for="fname">Maximum Weight During Take-Off</label>
+                          <input type="text" name="weight" placeholder="Enter Maximum Weight During Take-Off Here" > 
+                          <br>
+                          <label for="fname">Payload </label>
+                          <input type="text" name="payload" placeholder="Enter Payload Here" >
+                          <br>
+                          <label for="fname">Engine Type </label>
+                          <input type="text" name="engine_type" placeholder="Enter Engine Type Here" >
+                          <br>
+                          <label for="fname">Propeller Details </label>
+                          <input type="text" name="propeller_details" placeholder="Enter Propeller Details Here" >
+                          <br>
+                          <label for="fname">Length </label>
+                          <input type="text" name="length" placeholder="Enter Length Here" >
+                          <br>
+                          
+                          <label for="fname">Width </label>
+                          <input type="text" name="width" placeholder="Enter Width Here" >
+                          <br>
+
+                          <label for="fname">Height </label>
+                          <input type="text" name="height" placeholder="Enter Height Here" >
+                          <br>
+
+                          <label for="fname">Engine Power </label>
+                          <input type="text" name="engine_power" placeholder="Enter Engine Power Here" >
+                          <br>
+                          
+                          <label for="fname">Maximum Weight Attainable </label>
+                          <input type="text" name="max_weight_attain" placeholder="Enter Maximum Weight Attainable Here" >
+                          <br>
+
+                          <label for="fname">Upload Photo of RPAS</label>
+                          <div class="custom-file">
+                           <input type="file" name="rpas_image" class="custom-file-input" id="validatedCustomFile" required>
+                           <label class="custom-file-label" for="validatedCustomFile"></label>
+                           <div class="invalid-feedback">Example invalid custom file feedback</div>
+                         </div>
+                         </div>
+                         
+                        </div>
+                    </div>
+                  
+                  <br><br/>
+          
+                   <br>
+                  <input type="submit" value="submit">
+                </form>
+                   
+                   </div>
+                 
+              
+
+          
+
+ 
+      
+    </form>
+</body>
+</html>

@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    
+    <!-- Bootstrap Files and Meta Data -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    
+    <!-- Adding Google Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400&display=swap" rel="stylesheet">
+  
+
+    <!-- Adding External Css File  -->
+    <link rel="stylesheet" type="text/css" href="permission.css">
+    <link rel="icon" href="pqr.png" type="image/png" >
+    <title>NPNT Management Server</title>
+  </head>
+  <body>
+    <div class='d'>
+      <div class='child'>
+      <img src="pqr.png"><br/><br/>
+      <h1>Permission TO DGCA</h1><br/>
+      <p style="color: red;"><%= message %></p>
+
+     
+      <form action="/permission" method="POST">
+        <div class="row">
+          <div class="col-sm-6 col-md-5 col-lg-6">
+            <div class="child1">
+
+        <label for="birthdaytime">Start Time :</label>
+        <input type="datetime-local" name="start_time" required>
+        
+       
+        <label for="birthdaytime">Latitude 1 :</label>
+        <input type="text" name="latitude_1" required >
+
+        
+        <label for="birthdaytime">Latitude 2 :</label>
+        <input type="text" name="latitude_2" required >
+
+        <label for="birthdaytime">Latitude 3 :</label>
+        <input type="text" name="latitude_3" required >
+
+        
+        <label for="birthdaytime">Latitude 4 :</label>
+        <input type="text" name="latitude_4" required >
+
+        
+        </div>
+        </div>
+
+        <div class="col-sm-6 col-md-5 col-lg-6 ">
+          <div class="child2">
+        <label for="birthdaytime">End Time :</label>
+        <input type="datetime-local" name="end_time" required>
+         
+        <label for="birthdaytime">Longitude 1 :</label>
+        <input type="text" name="longitude_1" required>
+
+        <label for="birthdaytime">Longitude 2 :</label>
+        <input type="text" name="longitude_2" required>
+        
+        <label for="birthdaytime">Longitude 3 :</label>
+        <input type="text" name="longitude_3" required>
+        
+        
+        <label for="birthdaytime">Longitude 4 :</label>
+        <input type="text" name="longitude_4" required>
+
+        
+
+      
+      
+
+      </div>
+       
+      </div>
+     
+      </div>
+      <input type="submit" value="Submit Value">
+    </form>
+    </div>
+ 
+    <!-- Bootstrap Javascript Files  -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+  </body>
+
+</html>

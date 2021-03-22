@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        
+        <!-- Bootstrap Files and Meta Data -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+        
+        <!-- Adding Google Fonts -->
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400&display=swap" rel="stylesheet">
+      
+    
+        <!-- Adding External Css File  -->
+        <link rel="stylesheet" type="text/css" href="drone1.css">
+        <link rel="icon" href="pqr.png" type="image/png" >
+        <title>NPNT Management Server</title>
+      </head>
+<body>
+    <div>
+        <div class="main">
+            
+            <img src="pqr.png" ><br/><br/>
+            <h1 style="text-align: center;">Add Drone</h1><br>
+            
+            <form action='/drone' method="POST">
+                <div class="row">
+                  <div class="col-sm-6 col-md-5 col-lg-6">
+                    <div class="child1">
+                    <h4>Drone Details</h4>
+                    <p style="color: red;"><%= message %></p>
+                   
+                    <label for="fname">Drone Id</label>
+                    <input type="text" name="drone_id" placeholder="Enter Drone Id Here">
+                    <br>
+                    <label for="fname">Manufacturing Batch</label>
+                    <input type="text" name="batch" placeholder="Enter Manufacturing Batch">
+                    <br>
+                    <label for="fname">Manufacturing Shift</label>
+                    <input type="text" name="shift" placeholder="Enter Manufacturing Shift">
+                    <br>
+                    <label for="fname">Serial Number</label>
+                    <input type="text" name="serial" placeholder="Enter Serial Number">
+                    <br>
+                    <label for="fname">Manufacturing Date</label>
+                    <input type="text" name="manufacturing_date" placeholder="Enter Manufacturing Date">
+                    <br>
+                    <label for="exampleFormControlSelect1">Select Model</label>
+                    <select name="model">
+                        <option class="c">AMX Quad</option>
+                    </select>
+          
+                  
+                    </div>
+                  </div>
+
+                    <div class="col-sm-6 col-md-5 col-lg-6 ">
+                    <div class="child2">
+                    <h4>Flight Controller Hardware Details</h4>
+                    <label for="fname">Make</label>
+                    <input type="text" name="h_make" placeholder="Enter Make">
+                    <br>
+                    <label for="fname">Version</label>
+                    <input type="text" name="h_version" placeholder="Enter Version">
+                    <br>
+                    <label for="fname">Serial Number</label>
+                    <input type="text" name="h_serial_no" placeholder="Enter Serial Number">
+                    <br/><br/>
+                    <h4>Flight Controller Software Details</h4>
+                    <label for="fname">Make</label>
+                    <input type="text" name="s_make" placeholder="Enter Make">
+            
+                    <label for="fname">Model</label>
+                    <input type="text" name="s_version" placeholder="Enter Model">
+            
+                    <label for="fname">Serial Number</label>
+                    <input type="text" name="s_serial_no" placeholder="Enter Serial Number">
+                    
+                   
+                    </div>
+                   </div>
+                   <input type="submit" value="Submit"> 
+                   </div>
+                 
+              
+
+          
+
+ 
+      
+    </form>
+</body>
+</html>

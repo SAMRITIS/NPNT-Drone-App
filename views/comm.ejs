@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    
+    <!-- Bootstrap Files and Meta Data -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    
+    <!-- Adding Google Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400&display=swap" rel="stylesheet">
+  
+
+    <!-- Adding External Css File  -->
+    <link rel="stylesheet" type="text/css" href="pilot.css">
+    <link rel="icon" href="pqr.png" type="image/png" >
+    <title>NPNT Management Server</title>
+  </head>
+  <body>
+    <div class='main container'>
+      <div class='child'>
+      <img src="pqr.png"><br/><br/>
+      <h1>Communication Link Setup</h1><br/>
+      <p style="color: red;"><%= message %></p>
+      <form action='/com' method="POST">
+        <label for="exampleFormControlSelect1">Serial Port</label>
+        <select name="serial_port1" required/>
+            <option class="c">COM9 (ArduPilot MAVLink)</option>
+        </select>
+        <select name="serial_port2" required/>
+          <option class="c">57600</option>
+      </select>
+
+      <label for="exampleFormControlSelect1">Data Bits</label>
+      <select name="data_bits" required/>
+          <option class="c">6</option>
+          <option class="c">7</option>
+          <option class="c">8</option>
+      </select>
+
+      <label for="exampleFormControlSelect1">Parity</label>
+      <select name="parity1" required/>
+          <option class="c">None</option>
+          <option class="c">Even</option>
+          <option class="c">Odd</option>
+      </select>
+      <select name="parity2" required/>
+          <option class="c">None</option>
+      </select>
+        <br/>
+        <input type="submit" value="Connect">
+      </form>
+      </div>
+    </div>
+    
+    <!-- Bootstrap Javascript Files  -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+  </body>
+
+</html>
